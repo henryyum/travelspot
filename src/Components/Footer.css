@@ -1,0 +1,175 @@
+/* Footer */
+
+.footer {
+  background-color: black;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer-topleft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  max-width: 250px;
+  text-align: left;
+}
+
+.footer-topleft h4 {
+  font-size: 18px;
+  user-select: none;
+}
+
+.footer-topleft p {
+  font-size: 12px;
+  user-select: none;
+}
+
+.footer-icon {
+  width: 16px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-socials button {
+  background-color: black;
+  border: none;
+  padding: 0;
+}
+
+.footer-socials button:hover {
+  cursor: pointer;
+}
+
+.footer-top-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 18px;
+}
+
+.footer-top-midleft,
+.footer-top-midright {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-top-midleft a,
+.footer-top-midright a {
+  font-size: 12px;
+  transition: all 0.5s;
+}
+
+.footer-topleft a {
+  transition: all 0.5s;
+}
+
+.footer-top-midleft a:hover,
+.footer-top-midright a:hover,
+.footer-topleft a:hover {
+  color: #64b5f6;
+}
+
+.footer-right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.footer-right-input {
+  border-radius: 25px;
+  border: none;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  flex-grow: 1;
+}
+
+.footer-input-wrapper {
+  width: 225px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-right-wrapper p {
+  font-size: 12px;
+}
+
+.footer-input-icon {
+  width: 15px;
+}
+
+.footer-right-wrapper button {
+  padding: 0;
+  background-color: white;
+  border: none;
+}
+
+.footer-right-wrapper button:hover {
+  cursor: pointer;
+}
+
+.footer-copyright {
+  border-top: 1px solid #f5f3f4;
+  padding: 21px 0;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .footer-right-wrapper {
+    display: none;
+  }
+  .footer-icon {
+    width: 25px;
+  }
+  .footer-socials {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top-midright {
+    margin-left: 16px;
+  }
+  .footer-topleft {
+    margin-right: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}

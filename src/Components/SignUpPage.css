@@ -1,0 +1,151 @@
+/* Signup */
+
+.signup {
+  text-align: center;
+  padding: 120px 60px;
+}
+
+.signup h1 {
+  font-weight: 500;
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-btn {
+  max-width: 450px;
+  width: 100%;
+  padding: 10px;
+  background-color: #1e88e5;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.5s;
+  border: 1px solid black;
+  font-size: 14px;
+  border: none;
+}
+.signup-btn:hover {
+  background-color: #0d47a1;
+  cursor: pointer;
+}
+
+.signup-google-icon {
+  width: 40px;
+  border-radius: 8px;
+  border: none;
+  position: absolute;
+  left: 1%;
+}
+.signup-google {
+  border: 1px solid blue;
+  background-color: #1e88e5;
+  padding: 12px;
+  max-width: 440px;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: all 0.5s;
+  position: relative;
+}
+.signup-google:hover {
+  cursor: pointer;
+}
+
+.signup-google-btn {
+  flex-grow: 1;
+  background-color: #1e88e5;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s;
+  letter-spacing: 0.5px;
+}
+.signup-google-btn:hover {
+  cursor: pointer;
+}
+
+.signup-input {
+  max-width: 430px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s;
+}
+
+.signup-continue {
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+}
+
+.signup-wrapper p {
+  max-width: 600px;
+  font-size: 14px;
+}
+
+.signup-span {
+  color: #1e88e5;
+}
+
+.signup-span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-icon {
+  width: 30px;
+}
+
+.signup-icon:hover {
+  cursor: pointer;
+}
+
+.signup-icon-apple {
+  width: 55px;
+}
+
+.signup-icon-apple:hover {
+  cursor: pointer;
+}
+
+.signup-icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  margin-bottom: 36px;
+}
+
+.signup-or {
+  margin: 12px 0px;
+}
+
+@media (max-width: 900px) {
+  .signup-btn {
+    max-width: 225px;
+  }
+  .signup-google {
+    max-width: 250px;
+  }
+  .signup-input {
+    max-width: 245px;
+  }
+  .signup-wrapper h1 {
+    font-size: 30px;
+  }
+  .signup-wrapper p {
+    font-size: 12px;
+  }
+}

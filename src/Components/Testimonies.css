@@ -1,0 +1,162 @@
+/* Testimonies */
+
+.testimony {
+  padding: 10px 0px;
+}
+
+.testimony-header {
+  padding: 45px 0;
+}
+
+.testimony-wrapper {
+  padding-bottom: 45px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.testimony-h1 {
+  font-weight: 500;
+}
+
+.testimony-header {
+  font-weight: 300;
+}
+
+.testimony-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+.testimony-section-left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+  max-width: 450px;
+}
+
+.testimony-section-left h1 {
+  font-weight: 500;
+}
+
+.testimony-section-left h3 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.testimony-section-left h4 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.testimony-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimony-btn-wrapper-about {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimony-image {
+  max-height: 300px;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.testimony-image:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.testimony-h1-800px {
+  display: none;
+}
+
+.btn-opacity {
+  opacity: 25%;
+  transition: all 0.5s;
+}
+
+.btn-opacity:hover {
+  opacity: 100%;
+}
+
+.slider-icon {
+  background-color: #1e88e5;
+  width: 12px;
+  border-radius: 50px;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.slider-icon:hover {
+  cursor: pointer;
+  background-color: #0d47a1;
+}
+
+.slider-icon-btn {
+  background-color: white;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .testimony-section {
+    flex-direction: column;
+  }
+  .testimony-h1-800px {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .testimony-section-left h1 {
+    display: none;
+  }
+  .testimony-section-right {
+    order: 1;
+  }
+  .testimony-section-left {
+    order: 3;
+  }
+  .testimony-btn-wrapper-about {
+    text-align: center;
+  }
+  .testimony-section-left h3 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimony {
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .testimony-h1 {
+    font-size: 1.5em;
+  }
+  .testimony-header p {
+    font-size: 0.8em;
+  }
+
+  .testimony-h1-800px {
+    font-size: 1.3em;
+  }
+  .testimony-section-left h3 {
+    font-size: 0.8em;
+  }
+}

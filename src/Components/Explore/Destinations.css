@@ -1,0 +1,93 @@
+/* Destination */
+
+.destinations {
+  font-family: "Poppins", sans-serif;
+}
+
+.destination-header {
+  background: url("/images/mike-g.jpeg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image: no-repeat;
+  background-color: #a5a5a5;
+  background-blend-mode: multiply;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  padding: 65px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination-header h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.destination-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-paragraph p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.destination-cards {
+  padding: 85px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 1330px) {
+  .destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .destination-wrapper h1 {
+    font-size: 30px;
+  }
+  .destination-cards {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .destination-paragraph p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .destination-wrapper h1,
+  .destination-parapgraph p {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .destination-header {
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .destination-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

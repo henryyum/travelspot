@@ -1,0 +1,176 @@
+/* Header */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 85px;
+  color: black;
+  text-shadow: 3px 3px 6px lightgray;
+  background: url("/images/AbstractSwitch.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(140%);
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid blue; */
+}
+
+.header-nav-mid {
+  display: flex;
+  gap: 60px;
+}
+
+.header-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-button-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.header-icon {
+  width: 30px;
+}
+
+#header-login-btn {
+  background-color: #adb5bd;
+  color: #212529;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+#header-login-btn:hover {
+  cursor: pointer;
+  background-color: #1e88e5;
+  color: whitesmoke;
+}
+
+.Header a {
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  color: #212529;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.Header a:hover {
+  color: #1e88e5;
+}
+
+.Header-Wrapper {
+  height: 980px;
+  background-image: url("/images/personhike2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #adb5bd;
+  background-blend-mode: multiply;
+}
+
+.Header button {
+  background-color: #1e88e5;
+  color: whitesmoke;
+  padding: 6px 24px;
+  border-radius: 50px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+.Header button:hover {
+  cursor: pointer;
+  background-color: #0d47a1;
+}
+
+.header-hamburger {
+  display: none;
+  z-index: 10;
+}
+
+.header-hamburgerIcon {
+  width: 20px;
+}
+
+.header-hamburgerIcon:hover {
+  cursor: pointer;
+}
+
+.header-hamburgerMenu {
+  width: 100vw;
+  margin: 0;
+  padding: 24px 0px;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.header-hamburgerMenu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 1330px) {
+  .header-nav-mid a {
+    display: none;
+  }
+  .header-nav-left {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-hamburger {
+    display: block;
+  }
+  .header-hamburgerMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-nav-left {
+    flex-grow: 1;
+    justify-content: start;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  .header-icon {
+    order: 2;
+    width: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-button-wrapper button {
+    padding: 2px 16px;
+    font-size: 10px;
+  }
+  .Header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 21px;
+    position: relative;
+  }
+
+  .header-hamburger {
+    margin-right: 18px;
+  }
+  .header-hamburgerIcon {
+    width: 20px;
+  }
+
+  .header-nav-left {
+    margin-right: 18px;
+    align-self: center;
+  }
+}

@@ -1,0 +1,12 @@
+.Quote-container {
+  padding: 85px 85px;
+  background: url("/images/Abstract.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(110%);
+  box-shadow: 1px 1px 5px lightgray;
+}
+
+.Quote h4 {
+  font-weight: 300;
+}

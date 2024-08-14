@@ -1,0 +1,66 @@
+/* Blogs Page */
+
+.blogsPage-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: "Poppins", sans-serif;
+  padding: 65px 0px;
+}
+
+.blogsPage-header {
+  background: url("/images/harley.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-color: #a5a5a5;
+  background-blend-mode: multiply;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 24px;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+.blogsPage-header h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.blogsPage-header p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (max-width: 1330px) {
+  .blogsPage-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-card-wrapper,
+  .blogsPage-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .blogsPage-header h1 {
+    font-size: 30px;
+  }
+
+  .blogsPage-header p {
+    font-size: 16px;
+  }
+}
